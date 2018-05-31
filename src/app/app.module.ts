@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CoreModule } from './core/core.module';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { CoreModule } from './core/core.module';
   ],
   imports: [
     BrowserModule,
+    CarouselModule.forRoot(),
     CoreModule
   ],
   providers: [],

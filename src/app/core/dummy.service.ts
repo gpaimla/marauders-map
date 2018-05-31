@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { CoreModule } from './core.module';
 
 
@@ -10,7 +9,7 @@ export class DummyService {
 
     }
 
-    getData(){
+    getData() {
         return "Data";
     }
 
