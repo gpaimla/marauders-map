@@ -1,8 +1,9 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { DummyService } from './dummy.service';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
     imports: [
+        HttpClientModule
     ],
     declarations: [],
     providers: [

@@ -14,6 +14,12 @@ export class HomepageComponent implements OnInit {
   }
 
   getData() {
-    this.text = this.dummyService.getData();
+    this.dummyService.getData().subscribe(data => {
+      console.log("User ID: " + data.id);
+      console.log("Content: " + data.content);
+      this.text = "User ID: " + data.id + "Content: " + data.content;
+    });
+
   }
+
 }
